@@ -1,0 +1,104 @@
+/* GENERAL SETUP */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    background: linear-gradient(130deg, rgba(235, 217, 181, 1) 0%, rgba(236, 105, 165, 1) 50%, rgba(89, 232, 247, 1)100%);
+}
+
+body{
+    width: 80vw;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2 {
+   font-family: 'Raleway', sans-serif;
+   color: #2a2a2a; 
+}
+
+h1 {
+    /* rem is a way to scale text according to the root size of font for the page. Set to 10px above. */
+    font-size: 4rem;
+    text-align: center;
+    /* horizontal shadow, vertical shadow, blur radius, color */
+    text-shadow: 2px 2px 10px black;
+    /* use this to change text without editing html. This can be much more effective. This will alter all h1 in the entire html*/
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3rem;
+    /* color: #2a2a2a;  look up, the color was addressed when we called h1 and h2 above*/
+}
+
+p, li {
+    font-family: 'Roboto', sans-serif;
+    color: #2a2a2a; 
+    font-size: 1.8rem;
+    /* units are not needed when setting line height */
+    line-height: 1.5;
+}
+
+/* Header Layout (use comments to help keep track of and organize your code. You will be glad that you did.*/
+
+header {
+    margin-bottom: 10px;
+}
+
+main, header, nav, article, aside, footer, section {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1%;
+}
+
+nav{
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    text-align: center;
+    flex: 1;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* MAIN LAYOUT */
+
+main { 
+    display: flex;
+}
+
+section, article {
+    flex: 4;
+}
+/* section and article take up 80% of the viewport (flex: 4;)(4/(4+1)) */
+
+aside {
+    flex: 1;
+    /* aside will take up 20% of the viewport (1/(1+4)) */
+    margin-left: 10px;
+    padding: 1%
+}
+
+aside a{
+    float: left; 
+    width: 50%;
+}
+aside img {
+   max-width: 100%; 
+}
+
+footer {
+    margin-top: 10px;
+}
